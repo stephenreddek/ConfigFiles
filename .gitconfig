@@ -1,0 +1,26 @@
+[merge]
+	tool = kdiff3
+[mergetool.kdiff3]
+	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
+[diff]
+	guitool = kdiff3
+[difftool.kdiff3]
+	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
+[core]
+	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+	autocrlf = true
+[user]
+	name = Stephen Reddekopp
+	email = stephen.reddekopp@softekinc.com
+[push]
+	default = matching
+[credential]
+	helper = !\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\"
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
